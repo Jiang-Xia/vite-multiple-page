@@ -6,9 +6,9 @@
 ```
 ├── README.md
 ├── dist //打包输出目录
+├── assets //公共资源
+├── scripts //新建页面脚本和模板
 ├── src
-│   ├── arrets       //公共静态资源
-│   ├── components   //公共组件
 │   ├── store        //pinia 共享状态存储库
 │   ├── global        //全局公用
 │   └── projects     //多页面文件夹,目录下一个文件夹为一个项目（页面）
@@ -28,6 +28,26 @@
 **安装依赖**
 ```
 npm install
+```
+> 创建子项目
+
+```js
+npm run new:page
+//然后会提示：请输入要生成的'页面名称:页面描述'、会生成在 /src/projects 目录下
+//注意： 有两个页面模版，如果要用ts，可以执行  npm run new:page --ts
+// --ts为使用ts模板
+例如输入：newAdmin:新管理端
+//完成后 会在 scripts/multiPages.json 中生成对应的数据 后期删除需要删除对应的数据来保持一致 内容数据如下：
+[
+    {
+        "page": "admin",
+        "desc": "管理端"
+    },
+    {
+        "page": "client",
+        "desc": "客户端"
+    },
+]
 ```
 
 **运行指定项目**

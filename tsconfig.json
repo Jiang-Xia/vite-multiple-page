@@ -35,7 +35,11 @@
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "scripts/**/*.ts",
+    "scripts/template-ts/router/routes.ts",
+    "scripts/template-ts/router/index.ts",
+    "scripts/template-ts/main.ts",
   ],
   "references": [
     {
