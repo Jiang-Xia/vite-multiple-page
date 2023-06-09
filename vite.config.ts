@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import vue from '@vitejs/plugin-vue'
 import path, { resolve } from "path";
 import fs from "fs";
 import chalk from "chalk";
@@ -19,7 +19,7 @@ const getEnterPages = () => {
     log(chalk.red("--------------请在命令行后以 `--page=页面名称` 格式指定页面名称！---------------"));
     throw new Error()
   } else {
-    log(chalk.yellow('当前页面为:', process.env.npm_config_page));
+    log(chalk.yellow('当前页面为:', process.env.npm_config_page||''));
   }
   // console.log(entryFiles)
   const filterArr = projects.filter(

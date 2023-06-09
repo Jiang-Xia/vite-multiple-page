@@ -35,14 +35,14 @@ process.stdin.on('data', async (page) => {
     'utf-8',
     (err, data) => {
       //获取老数据
-      let datas = JSON.parse(data)
+      const datas:any = JSON.parse(data)
       //和老数据去重
-      let index = datas.findIndex((ele) => {
+      const index:number = datas.findIndex((ele) => {
         return ele.page == inputName
       })
       if (index == -1) {
         //写入新页面的信息
-        let obj = {
+        const obj = {
           page: inputName,
           desc: inputDesc
         }

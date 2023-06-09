@@ -3,5 +3,9 @@
 </template>
 
 <script setup></script>
-
+<script>
+export default {
+  name: 'pageIndex'
+}
+</script>
 <style lang="less" scoped></style>
