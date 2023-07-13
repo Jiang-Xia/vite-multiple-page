@@ -35,9 +35,9 @@ process.stdin.on('data', async (page) => {
     'utf-8',
     (err, data) => {
       //获取老数据
-      const datas:any = JSON.parse(data)
+      const datas = JSON.parse(data)
       //和老数据去重
-      const index:number = datas.findIndex((ele) => {
+      const index = datas.findIndex((ele) => {
         return ele.page == inputName
       })
       if (index == -1) {

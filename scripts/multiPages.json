@@ -2,5 +2,9 @@
   {
     "page": "client",
     "desc": "客户端"
+  },
+  {
+    "page": "admin",
+    "desc": "管理端"
   }
 ]

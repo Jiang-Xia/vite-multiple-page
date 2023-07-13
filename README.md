@@ -32,9 +32,9 @@ npm install
 > 创建子项目
 
 ```js
-npm run new:page
+npm run newPage
 //然后会提示：请输入要生成的'页面名称:页面描述'、会生成在 /src/projects 目录下
-//注意： 有两个页面模版，如果要用ts，可以执行  npm run new:page --ts
+//注意： 有两个页面模版，如果要用ts，可以执行  npm run newPage --ts
 // --ts为使用ts模板
 例如输入：newAdmin:新管理端
 //完成后 会在 scripts/multiPages.json 中生成对应的数据 后期删除需要删除对应的数据来保持一致 内容数据如下：
@@ -59,6 +59,7 @@ npm run new:page
 用 process.env.npm_config_page 获取参数 
 */
 npm run dev --page=页面名称
+// ex: npm run dev --page=client
 ```
 
 **打包指定子项目**
@@ -67,5 +68,6 @@ npm run dev --page=页面名称
 
 ```js
 npm run build --page=页面名称
+// ex: npm run build --page=client
 ```
 
