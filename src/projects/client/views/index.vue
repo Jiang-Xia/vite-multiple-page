@@ -1,9 +1,13 @@
 <template>
-  <h3>首页</h3>
+  <h3>首页 {{ appStore.app }}</h3>
 </template>
 
-<script setup lang="ts"></script>
-<script>
+<script setup lang="ts" >
+  import {useAppStore} from '@/store'
+  const appStore = useAppStore();
+  console.log(appStore.app)
+</script>
+<script  lang="ts">
 export default {
   name: 'pageIndex'
 }
