@@ -1,14 +1,16 @@
 <template>
-  <router-view></router-view>
+  <van-config-provider :theme="theme">
+    <router-view></router-view>
+  </van-config-provider>
 </template>
-<script setup lang="ts"></script>
-<style lang="less">
-#app {
-  font-family: PingFangSC-Regular;
-  font-size: 3.733vw;
-  color: #000;
-  font-weight: normal;
-  line-height: 1.5;
-  letter-spacing: 0;
-}
-</style>
+<script setup lang="ts">
+import { ref } from 'vue';
+import type {ConfigProviderTheme } from 'vant'
+const theme = ref<ConfigProviderTheme>('light');
+
+setTimeout(() => {
+  theme.value = 'dark';
+}, 3000);
+
+</script>
+<style lang="less"></style>
