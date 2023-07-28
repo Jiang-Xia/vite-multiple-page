@@ -1,8 +1,7 @@
-import { RouteRecordRaw } from 'vue-router'
-export const routes: Array<RouteRecordRaw> = [
+export const routes = [
   {
     path: '/',
-    redirect: '/home',
+    redirect: '/home'
   },
   {
     path: '/home',
@@ -13,6 +12,6 @@ export const routes: Array<RouteRecordRaw> = [
   {
     path: '/:pathMatch(.*)*',
     name: 'notFound',
-    component: () => import('@/global/pages/not-found/index.vue'),
-  },
+    component: () => import('@/global/pages/not-found/index.vue')
+  }
 ]

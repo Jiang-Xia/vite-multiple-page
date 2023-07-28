@@ -11,7 +11,7 @@
         <van-slider v-model="slider" />
       </template>
     </van-field>
-    <div style="margin: 16px">
+    <div class="pxtovw">
       <van-button round block type="primary" native-type="submit">
         提交
       </van-button>
@@ -34,6 +34,8 @@ const rate = ref(4)
 </script>
 <style lang="less" scoped>
 .pxtovw {
+  margin: 16px auto 0px;
   width: 200px;
+  text-align: center;
 }
 </style>

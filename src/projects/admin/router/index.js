@@ -8,7 +8,7 @@ const router = createRouter({
 router.afterEach((to, from, next) => {
   //遍历meta改变title
   if (to.meta.title) {
-    document.title = to.meta.title as string
+    document.title = to.meta.title
   }
   window.scrollTo(0, 0)
 })
